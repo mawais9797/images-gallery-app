@@ -2,6 +2,7 @@
 import { ErrorMessage, Field, Form, Formik } from "formik";
 import * as Yup from "yup";
 import axios from "axios";
+import Link from "next/link";
 
 const UserRegister = () => {
   const initialValues = {
@@ -56,10 +57,12 @@ const UserRegister = () => {
           </div>
 
           <button className="btn btn-md btn-success" type="submit">
-            Submit
+            Register
           </button>
         </Form>
       </Formik>
+
+      <Link href="/login">Login Here</Link>
     </div>
   );
 };

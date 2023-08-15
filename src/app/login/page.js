@@ -4,6 +4,7 @@ import * as Yup from "yup";
 import axios from "axios";
 import { useRouter } from "next/navigation";
 import { useEffect } from "react";
+import Link from "next/link";
 
 const UserLogin = () => {
   const router = useRouter();
@@ -75,10 +76,12 @@ const UserLogin = () => {
             </div>
 
             <button className="btn btn-md btn-success" type="submit">
-              Submit
+              Login
             </button>
           </Form>
         </Formik>
+
+        <Link href="/">Register Here</Link>
       </div>
     </div>
   );
